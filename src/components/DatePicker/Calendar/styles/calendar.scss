@@ -1,0 +1,165 @@
+.cld-container {
+  left: 0;
+  top: 4rem;
+  width: 30rem;
+  min-height: 35rem;
+  background: var(--modal-background-color);
+  overflow: hidden;
+}
+
+.cld-head {
+  float: left;
+  width: 100%;
+}
+
+.cld-body {
+  float: left;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/**
+* Controls Header
+*/
+
+.cldh-button {
+  display: flex;
+  justify-content: space-between;
+  width: 9rem;
+  height: 100%;
+}
+
+.cldhb-inner:hover {
+  cursor: pointer;
+  background: var(--calendar-button-selected-background-color);
+  opacity: 0.7;
+}
+
+.cldhb-inner {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  img {
+    height: 1.8rem;
+    padding: 0.3rem;
+  }
+}
+
+.cldh-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cldhc-year {
+  float: left;
+  width: 100%;
+  height: 3rem;
+  font-size: 2.7rem;
+  color: #666;
+  text-align: center;
+}
+
+.cldhc-month {
+  float: left;
+  width: 100%;
+  height: 1.5rem;
+  font-size: 1.3rem;
+  color: #666;
+  text-align: center;
+}
+
+/**
+*  Calendar
+*/
+.cc-head,
+.cch-name,
+.cc-body,
+.cdc-day span,
+.cdc-day,
+.c-day-container,
+.c-container {
+  position: relative;
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.c-container {
+  width: 100%;
+  height: 100%;
+}
+
+.cc-head {
+  height: 3rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.cch-name {
+  width: 14.285%;
+  height: 3rem;
+  line-height: 3rem;
+  color: var(--title-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.cc-body {
+  height: 27rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.c-day-container {
+  display: flex;
+  align-items: center;
+  width: 14.285%;
+  height: 16.6666%;
+}
+
+.cdc-day {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.cdc-day span:hover {
+  cursor: pointer;
+  background: var(--calendar-button-selected-background-color);
+  color: black;
+  opacity: 0.7;
+}
+
+.cdc-day span {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background: var(--calendar-button-background-color);
+}
+
+.c-day-container.disabled {
+  display: flex;
+  align-items: center;
+  background: var(--modal-background-color);
+}
+
+.c-day-container.disabled .cdc-day span {
+  display: none;
+}
+
+.c-day-container.highlight .cdc-day span {
+  color: var(--calendar-button-selected-color);
+  background: var(--calendar-button-selected-background-color);
+}

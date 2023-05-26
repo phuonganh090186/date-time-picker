@@ -1,0 +1,31 @@
+.clock-pin {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: var(--clock-color);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.clock-pointer {
+	width: 2px;
+	background-color: var(--clock-color);
+	position: absolute;
+	left: calc(50% - 1px);
+	bottom: 50%;
+	transform-origin: center bottom 0px;
+}
+
+.clock-thumb {
+	width: 4px;
+	height: 4px;
+	background-color: var(--clock-color);
+	border-radius: 50%;
+	position: absolute;
+	top: -21px;
+	left: calc(50% - 18px);
+	border: 16px solid var(--clock-color);
+	box-sizing: content-box;
+}

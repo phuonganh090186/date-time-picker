@@ -1,0 +1,34 @@
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+  }
+  
+  .modal-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: transparent;
+  }
+  
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: var(--modal-background-color);
+    border-radius: 1.5rem;
+    max-width: 60rem;
+    padding: 2rem;
+  }
+  
